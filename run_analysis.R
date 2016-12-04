@@ -1,7 +1,7 @@
 #Step 0. Preparing and reading in the data. 
 
-#set the working directory on my local PC
-setwd("C:/Peti/Gettingand cleaning")
+#set the working directory on my local PC: not showing full path
+setwd("..../Gettingand cleaning")
 
 require(dplyr)
 
