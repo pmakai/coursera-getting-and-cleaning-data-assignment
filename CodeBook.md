@@ -12,7 +12,7 @@ The following data processing steps have been performed:
 2. Selecting means and standard deviations and saves this into a dataset
 3. Converted the activity columns into factors based on the values of the activity_labels dataset
 4. Renames the unclear variables
-5. Creates a tidy dataset that consists of the average (mean) value of each variable for each subject and activity pair.
+5. Creates a tidy dataset that consists of the average (mean) value of each variable for each subject and activity pair. This dataset is called tidydata.txt
 
 ## List of variables
 
