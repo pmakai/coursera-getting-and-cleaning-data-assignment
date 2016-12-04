@@ -58,22 +58,22 @@ meanstd <- complete[ , meanstd.list == TRUE]
 #3.	Uses descriptive activity names to name the activities in the data set
 #factorizing activity varaible
 
-meanstdact$activity <- factor(meanstd$activity, levels = activitylabels[,"activitynumber"], labels = activitylabels[,"activityname"])
+meanstd$activity <- factor(meanstd$activity, levels = activitylabels[,"activitynumber"], labels = activitylabels[,"activityname"])
 
 #4.	Appropriately labels the data set with descriptive variable names.
 
 #based on features_info:
-names(meanstdact) <- gsub("^t", "time", names(meanstdact))
-names(meanstdact) <- gsub("^f", "frequency", names(meanstdact))
+names(meanstd) <- gsub("^t", "time", names(meanstd))
+names(meanstd) <- gsub("^f", "frequency", names(meanstd))
 
-names(meanstdact) <- gsub("Acc", "Accelerator", names(meanstdact))
-names(meanstdact) <- gsub("Mag", "Magnitude", names(meanstdact))
-names(meanstdact) <- gsub("Gyro", "Gyroscope", names(meanstdact))
+names(meanstd) <- gsub("Acc", "Accelerator", names(meanstd))
+names(meanstd) <- gsub("Mag", "Magnitude", names(meanstd))
+names(meanstd) <- gsub("Gyro", "Gyroscope", names(meanstd))
 
 
 #5.	From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 
-tidy<-aggregate(. ~subject + activityname, meanstdact, mean)
-tidy<-tidy[order(tidy$subject,tidy$activityname),]
+tidy<-aggregate(. ~subject + activity, meanstd, mean)
+tidy<-tidy[order(tidy$subject,tidy$activity),]
 write.table(tidy, file = "tidydata.txt",row.name=FALSE)
