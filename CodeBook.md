@@ -19,7 +19,12 @@ The following data processing steps have been performed:
 ### Identifying variables
 
  [1] "subject"          subject number values: 1-30                                       
- [2] "activity"         activity type, factor, possible responses: WALKING, WALKING_UPSTAIRS,WALKING_DOWNSTAIRS,SITTINGSTANDING, LAYING
+ [2] "activity"         activity type, factor, possible responses: 
+  WALKING, 
+  WALKING_UPSTAIRS,
+  WALKING_DOWNSTAIRS,
+  SITTINGSTANDING, 
+  LAYING
 
 ### Measurement values
 
