@@ -1,6 +1,12 @@
 # CodeBook
 
 The data describes the results of a study on wearable computing. 
+The original data can be found here: 
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+The following data processing steps have been performed:
+
 
 
 ## List of variables
@@ -93,3 +99,5 @@ These variables are all measurements from the original dataset, and contain mean
 [79] "frequencyBodyBodyGyroscopeJerkMagnitude-mean()"      
 [80] "frequencyBodyBodyGyroscopeJerkMagnitude-std()"       
 [81] "frequencyBodyBodyGyroscopeJerkMagnitude-meanFreq()"  
+
+
