@@ -7,6 +7,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 The following data processing steps have been performed:
 
+0. Creating test and training datasets based on measurements, activity labels and variable labels
 1. Merging the training and test datasets
 2. Selecting means and standard deviations and saves this into a dataset
 3. Converted the activity columns into factors based on the values of the activity_labels dataset
