@@ -2,7 +2,7 @@
 
 This is the course project for the Getting and Cleaning Data Coursera course. The R script, run_analysis.R, does the following:
 
-## prepares the assignemnt
+## Prepares the assignemnt
 
 - loads dplyr
 - Loads both the training and test datasets (X Y, and subject).
