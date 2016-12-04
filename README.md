@@ -5,7 +5,7 @@ This is the course project for the Getting and Cleaning Data Coursera course. Th
 
 1. prepares the assignemnt
 - loads dplyr
-- Loads both the training and test datasets( X Y, and subject).
+- Loads both the training and test datasets (X Y, and subject).
 - Loads features, activity labels and 
 
 
